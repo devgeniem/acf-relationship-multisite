@@ -152,6 +152,7 @@ To get the post on the frontend you need to do a foreach loop.
 ### Changelog
 **1.2.0 (ACF >= 5.2.7)**
 * Removed the version of the plugin that was for "ACF 5.2.6 or before" in order to reduce clutter in the project.
+* a11y: Allow the user to identify the options and select them using the keyboard
 
 **1.1.02 (ACF >= 5.2.7)**
 * Fixed an error which doesn't return further ACF fields if the Multisite field has no value selected

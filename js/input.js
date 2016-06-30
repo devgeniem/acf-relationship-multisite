@@ -5,6 +5,21 @@
 
 (function($){
 
+	/**
+	 * Triggers a click event when the Enter/Return is pressed on the current element.
+	 * This will also
+	 * @param  {Event} e JavaScript Event emitter
+	 * @return {Boolean} False prevents the original event from occurring and propogating back up the tree.
+	 */
+	function triggerClickOnEnter(e) {
+		var code = e.keyCode || e.which;
+		if (code === 13) {
+			jQuery(e.srcElement).click();
+			return false;
+		}
+		return true;
+	}
+
 	acf.ajax = acf.model.extend({
 
 		actions: {
@@ -634,7 +649,10 @@
 
 			});
 
-
+			// Make the list of choices keyboard accessible
+			this.$choices.find('.acf-rel-item').each(function() {
+				$(this).on('keyup', triggerClickOnEnter);
+			});
 		},
 
 		walker: function( data ){
@@ -665,7 +683,7 @@
 
 				} else {
 
-					s += '<li><span class="acf-rel-item" data-id="' + data.id + '">' + data.text + '</span></li>';
+					s += '<li><span role="button" tabindex="0" class="acf-rel-item" data-id="' + data.id + '">' + data.text + '</span></li>';
 
 				}
 
@@ -749,7 +767,7 @@
 				'<li>',
 					'<input type="hidden" name="' + this.$input.attr('name') + '[]" value="' + e.$el.data('id') + '" />',
 					'<span data-id="' + e.$el.data('id') + '" class="acf-rel-item">' + e.$el.html(),
-						'<a href="#" class="acf-icon small dark" data-name="remove_item"><i class="acf-sprite-remove"></i></a>',
+						'<a href="#" role="button" aria-label="Remove this item" title="Remove this item" class="acf-icon small dark" data-name="remove_item"><i class="acf-sprite-remove"></i></a>',
 					'</span>',
 				'</li>'].join('');
 
