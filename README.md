@@ -1,6 +1,6 @@
 ### IMPORTANT NOTICE
 
-**There are a lot requests and issus regarding the (pre-)selection of post types and/or taxonomies. But there's one main problem within WordPress: Post Types, especially CPTs, are registered for each individual site at run time. So there's no easy possibilty to grab post types and taxonomies from other sites.**
+**There are a lot requests and issues regarding the (pre-)selection of post types and/or taxonomies. But there's one main problem within WordPress: Post Types, especially CPTs, are registered for each individual site at run time. So there's no easy possibility to grab post types and taxonomies from other sites.**
 
 **This plugin is no longer being developed! If anyone has the knowledge and time further developing the plugin, feel free to use the existing code.**
 
@@ -149,11 +149,10 @@ To get the post on the frontend you need to do a foreach loop.
 ```
 
 
-### Compatibility
-
-This plugin needs the installation of ACF 5. There's a version included for ACF 5.2.6 and before and a version for ACF 5.2.7 and newer.
-
 ### Changelog
+**1.2.0 (ACF >= 5.2.7)**
+* Removed the version of the plugin that was for "ACF 5.2.6 or before" in order to reduce clutter in the project.
+
 **1.1.02 (ACF >= 5.2.7)**
 * Fixed an error which doesn't return further ACF fields if the Multisite field has no value selected
 
