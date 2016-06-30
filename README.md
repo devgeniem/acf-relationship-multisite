@@ -60,24 +60,24 @@ Array
                     [post_author] => 1
                     [post_date] => 2014-09-18 19:56:07
                     [post_date_gmt] => 2014-09-18 19:56:07
-                    [post_content] => 
+                    [post_content] =>
                     [post_title] => My Sample Post
-                    [post_excerpt] => 
+                    [post_excerpt] =>
                     [post_status] => publish
                     [comment_status] => open
                     [ping_status] => open
-                    [post_password] => 
+                    [post_password] =>
                     [post_name] => sample-post
-                    [to_ping] => 
-                    [pinged] => 
+                    [to_ping] =>
+                    [pinged] =>
                     [post_modified] => 2014-09-18 19:56:07
                     [post_modified_gmt] => 2014-09-18 19:56:07
-                    [post_content_filtered] => 
+                    [post_content_filtered] =>
                     [post_parent] => 0
                     [guid] => http://yourdomain.com/multisite/?p=3
                     [menu_order] => 0
                     [post_type] => post
-                    [post_mime_type] => 
+                    [post_mime_type] =>
                     [comment_count] => 0
                     [filter] => raw
                 )
