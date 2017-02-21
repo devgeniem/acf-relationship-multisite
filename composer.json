@@ -5,7 +5,13 @@
     "authors": [
         {
             "name": "tmconnect",
-            "email": "thomas.meyer@dreihochzwo.de"
+            "email": "thomas.meyer@dreihochzwo.de",
+            "role": "Main Developer"
+        },
+        {
+            "name": "Anttoni Lahtinen",
+            "email": "anttoni.lahtinen@geniem.com",
+            "role": "Maintainer"
         }
     ],
     "require": {}
