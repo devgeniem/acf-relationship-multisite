@@ -1,8 +1,6 @@
-### IMPORTANT NOTICE
+Forked for composer installation and possible future edits.
 
-**There are a lot requests and issues regarding the (pre-)selection of post types and/or taxonomies. But there's one main problem within WordPress: Post Types, especially CPTs, are registered for each individual site at run time. So there's no easy possibility to grab post types and taxonomies from other sites.**
-
-**This plugin is no longer being developed! If anyone has the knowledge and time further developing the plugin, feel free to use the existing code.**
+---
 
 # Advanced Custom Fields: Relationship Multisite
 
