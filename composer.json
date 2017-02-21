@@ -1,0 +1,12 @@
+{
+    "name": "devgeniem/acf-relationship-multisite",
+    "description": "Get post, pages and custom post types from another site of your WordPress Multisite installation.",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "tmconnect",
+            "email": "thomas.meyer@dreihochzwo.de"
+        }
+    ],
+    "require": {}
+}
