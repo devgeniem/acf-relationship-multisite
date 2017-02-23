@@ -1,5 +1,15 @@
 Forked for composer installation and possible future edits.
 
+####Changelog after fork
+
+**v1.0.1**  
+Returns posts now as arrays instead of post objects. This change is needed for this plugin to work with Dustress. 
+Returned array contains acf-fields also under fields.
+
+**v1.0.0**
+Added composer.json for usage with composer.
+
+
 ---
 
 # Advanced Custom Fields: Relationship Multisite

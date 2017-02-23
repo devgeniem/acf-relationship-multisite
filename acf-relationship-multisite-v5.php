@@ -58,7 +58,6 @@ class acf_field_relationship_multisite extends acf_field {
 		wp_enqueue_script('acf-relationship_multisite');
 
 
-
 	}
 	/*
 	*  query_posts
@@ -820,19 +819,23 @@ class acf_field_relationship_multisite extends acf_field {
 
 
 		// convert to int
-		$r['selected_posts'] = array_map('intval', $selected_posts);
+		$r = array_map('intval', $selected_posts);
 
 
 		// load posts if needed
 		if( $field['return_format'] == 'object' ) {
 
 			// get posts
-			$r['selected_posts'] = $this->get_posts( $selected_posts );
+			$r = $this->get_posts( $selected_posts );
 
+			// Modify post objects to array for Dustpress compatibity.
+			foreach ($r as &$post) {
+				$post = (array)$post;
+				// Add custom fields.
+				$post['fields'] = get_fields( $post['ID'] );
+			}
 		}
 
-
-		$r['site_id'] = $field['site'];
 
 		// return
 		restore_current_blog();
